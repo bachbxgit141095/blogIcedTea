@@ -1,0 +1,5 @@
+FROM openjdk:8
+ADD target/craw.jar craw.jar
+EXPOSE 8888
+ENTRYPOINT ["java","-jar","craw.jar"]
+
